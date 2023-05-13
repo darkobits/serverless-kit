@@ -1,1 +1,10 @@
-export { ts as default } from '@darkobits/eslint-plugin';
+import { ts } from '@darkobits/eslint-plugin';
+
+
+export default [
+  ...ts, {
+    rules: {
+      'unicorn/prefer-ternary': 'off'
+    }
+  }
+];
