@@ -30,6 +30,8 @@ jobs:
       - name: Build
         run: npx nr build
       - name: Test
-        run: npx nr test
-      # - name: Upload Coverage Report
-      #   uses: codecov/codecov-action@v3
+        run: npx nr test.coverage
+      - name: Upload Coverage Report
+        uses: codecov/codecov-action@v3
+        env:
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}

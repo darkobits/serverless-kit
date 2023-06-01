@@ -32,7 +32,7 @@ export function res<R extends APIGatewayProxyResult = APIGatewayProxyResult>(opt
     response.statusCode = options.statusCode ?? 200;
     response.headers = response.headers ?? {};
 
-    if (options.body) {
+    if (options.body !== undefined) {
       if (typeof options.body === 'string') {
         response.headers['content-type'] = 'text/plain';
         response.body = options.body;

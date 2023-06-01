@@ -31,7 +31,7 @@ export function httpErrorHandlerMiddleware(): MiddyMiddleware {
           })
         };
       } else {
-        // Error is a generic error.
+        // Error is a generic error or unknown value.
         req.response = {
           ...response,
           ...res({
@@ -48,6 +48,10 @@ export function httpErrorHandlerMiddleware(): MiddyMiddleware {
         message,
         http: event.requestContext.http
       });
+
+      // According to the Middy docs, we may need to return here to indicate
+      // that we have handled the error.
+      // return response;
     }
   };
 }

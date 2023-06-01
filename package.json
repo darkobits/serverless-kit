@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "type": "module",
   "license": "WTFPL",
-  "description": "Miscellaneous utilities for React applications.",
+  "description": "Miscellaneous utilities for serverless applications.",
   "author": "darkobits",
   "engines": {
     "node": ">=16",
@@ -22,13 +22,13 @@
     "help": "nr --scripts"
   },
   "peerDependencies": {
-    "sst": "^2.0.0"
+    "sst": "^2.0.0",
+    "@middy/core": "^4.4.1"
   },
   "dependencies": {
     "@aws-lambda-powertools/logger": "^1.8.0",
     "@aws-lambda-powertools/metrics": "^1.8.0",
     "@aws-lambda-powertools/tracer": "^1.8.0",
-    "@middy/core": "^4.4.1",
     "@types/aws-lambda": "^8.10.115",
     "@types/http-errors": "^2.0.1",
     "http-errors": "^2.0.0"
