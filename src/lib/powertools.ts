@@ -4,11 +4,12 @@ import { Tracer } from '@aws-lambda-powertools/tracer';
 import env from '@darkobits/env';
 
 
-const defaultValues = {
+const defaultValues: any = {
   region: env('AWS_REGION'),
-  executionEnv: env('AWS_EXECUTION_ENV'),
-  version: env('GIT_VERSION', true)
+  executionEnv: env('AWS_EXECUTION_ENV')
 };
+
+if (env('GIT_VERSION')) defaultValues.version = env('GIT_VERSION');
 
 
 export const logger = new Logger({
