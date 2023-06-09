@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.1.4](https://github.com/darkobits/serverless-kit/compare/v0.1.3...v0.1.4) (2023-06-09)
+
+
+### 🛠 Refactoring
+
+* Strip superfluous "Error" strings from error names. ([fc6551a](https://github.com/darkobits/serverless-kit/commit/fc6551a2444e012c4bdc657b95d0219db15853f7))
+
 ## [0.1.3](https://github.com/darkobits/serverless-kit/compare/v0.1.2...v0.1.3) (2023-06-09)
 
 
