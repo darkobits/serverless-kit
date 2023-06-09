@@ -18,6 +18,14 @@ export function httpErrorHandlerMiddleware(): MiddyMiddleware {
       message = message.replace(/\.{2}$/g, '.');
 
       if (isHttpError(error)) {
+        let errorName: string = error.code ?? error.name;
+
+        // Strip the superfluous "Error" added to HTTP error class names here:
+        // https://github.com/jshttp/http-errors/blob/master/index.js#L285-L289
+        if (errorName !== 'InternalServerError' && errorName.endsWith('Error')) {
+          errorName = errorName.replace(/Error$/g, '');
+        }
+
         // Error was created using http-errors.
         req.response = {
           ...response,
@@ -25,7 +33,7 @@ export function httpErrorHandlerMiddleware(): MiddyMiddleware {
             statusCode: error.statusCode,
             headers: error.headers,
             body: {
-              error: error.code ?? error.name,
+              error: errorName,
               message
             }
           })

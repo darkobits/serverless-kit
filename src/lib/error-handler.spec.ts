@@ -42,6 +42,34 @@ describe('onError', () => {
           error: error.code
         });
       });
+
+      describe('that is an Internal Server Error', () => {
+        const request = createRequest();
+        const error: any = new httpError.InternalServerError();
+        request.error = error;
+
+        it('should set response.body.error to InternalServerError', () => {
+          onError(request);
+
+          expect(JSON.parse(request.response.body)).toMatchObject({
+            error: 'InternalServerError'
+          });
+        });
+      });
+
+      describe('that is not an Internal Server Error', () => {
+        const request = createRequest();
+        const error: any = new httpError.BadRequest();
+        request.error = error;
+
+        it('should strip the superfluous "Error" from response.body.error', () => {
+          onError(request);
+
+          expect(JSON.parse(request.response.body)).toMatchObject({
+            error: 'BadRequest'
+          });
+        });
+      });
     });
 
     describe('that has a "name" property', () => {
