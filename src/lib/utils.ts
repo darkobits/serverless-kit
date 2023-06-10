@@ -1,3 +1,8 @@
+import os from 'os';
+
+import nodeMachineId from 'node-machine-id';
+
+
 /**
  * Encodes the provided JSON-serializable value as a base-64 string.
  */
@@ -29,4 +34,15 @@ export function base64ToJson<T = Record<string, any>>(value?: string) {
   } catch (err: any) {
     throw new Error(`[base64ToJson] Error serializing value: ${err.message}`, { cause: err });
   }
+}
+
+
+/**
+ * Computes the stage name for local development using a combination of the
+ * local username and a unique machine identifier.
+ */
+export function getLocalStageName() {
+  const localUsername = os.userInfo().username;
+  const localMachineId = nodeMachineId.machineIdSync().slice(0, 7);
+  return `local-${localUsername}-${localMachineId}`;
 }
