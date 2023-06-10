@@ -35,6 +35,11 @@
   ><img
     src="https://img.shields.io/static/v1?label=commits&message=conventional&style=flat-square&color=398AFB"
   ></a>
+  <a
+    href="https://firstdonoharm.dev"
+  ><img
+    src="https://img.shields.io/static/v1?label=license&message=hippocratic&style=flat-square&color=753065"
+  ></a>
 </p>
 
 # Install
