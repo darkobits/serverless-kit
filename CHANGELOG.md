@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/darkobits/serverless-kit/compare/v0.1.4...v0.2.0) (2023-06-10)
+
+
+### ✨ Features
+
+* Add `getLocalStageName` utility. ([cb73d7d](https://github.com/darkobits/serverless-kit/commit/cb73d7de64c346d7bdf78a924428811eb9fb85bd))
+
+
+### 🏗 Chores
+
+* **deps:** Update dependencies. ([bbb83cb](https://github.com/darkobits/serverless-kit/commit/bbb83cb9f060a873b9deb9a0c47e8c7d4f35dcf5))
+* Update LICENSE. ([22deb4d](https://github.com/darkobits/serverless-kit/commit/22deb4dd6b4d1e3b30cfcd6c0baff31eaa34a313))
+
 ## [0.1.4](https://github.com/darkobits/serverless-kit/compare/v0.1.3...v0.1.4) (2023-06-09)
 
 
