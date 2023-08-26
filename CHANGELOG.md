@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.2](https://github.com/darkobits/serverless-kit/compare/v0.2.1...v0.2.2) (2023-08-26)
+
+
+### 🐞 Bug Fixes
+
+* Improve typepings and access properties safety. ([6912058](https://github.com/darkobits/serverless-kit/commit/6912058e53d7faf629c31c9b7704f612eb2fc77e))
+
+
+### 🏗 Chores
+
+* **deps:** Update dependencies. ([775be1f](https://github.com/darkobits/serverless-kit/commit/775be1ffb2c5a0c0727821bb905daf38b5b9f6b5))
+
 ## [0.2.1](https://github.com/darkobits/serverless-kit/compare/v0.2.0...v0.2.1) (2023-06-10)
 
 
