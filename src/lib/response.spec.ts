@@ -96,7 +96,7 @@ describe('res.redirectTo', () => {
 
 describe('res.base64Image', () => {
   it('should set appropriate status code and headers', () => {
-    const url = 'https://crayola.com';
+    // const url = 'https://crayola.com';
 
     expect(res.base64Image('png', 'imageData')).toMatchObject({
       statusCode: 200,
