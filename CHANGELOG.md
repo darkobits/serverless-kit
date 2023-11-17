@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.3](https://github.com/darkobits/serverless-kit/compare/v0.2.2...v0.2.3) (2023-11-17)
+
+
+### 🏗 Chores
+
+* **deps:** Update dependencies. ([957e210](https://github.com/darkobits/serverless-kit/commit/957e2100fe8d348e5794221d36c3833a0e011967))
+
 ## [0.2.2](https://github.com/darkobits/serverless-kit/compare/v0.2.1...v0.2.2) (2023-08-26)
 
 
