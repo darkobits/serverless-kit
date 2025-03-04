@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/darkobits/serverless-kit/compare/v0.2.6...v0.3.0) (2025-03-04)
+
+
+### ⚠ BREAKING CHANGES
+
+* **deps:** Require @middy/core 3.x.
+
+* **deps:** Update dependencies. ([00ac289](https://github.com/darkobits/serverless-kit/commit/00ac28997c65e2eeb5585568373465df3284155b))
+
 ## [0.2.6](https://github.com/darkobits/serverless-kit/compare/v0.2.5...v0.2.6) (2024-06-02)
 
 ## [0.2.5](https://github.com/darkobits/serverless-kit/compare/v0.2.4...v0.2.5) (2024-06-02)
