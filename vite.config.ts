@@ -1,7 +1,7 @@
 import { vite } from '@darkobits/ts';
 
 
-export default vite.library({
+export default vite.node({
   test: {
     coverage: {
       exclude: [

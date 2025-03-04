@@ -22,20 +22,20 @@
     "help": "nr --scripts"
   },
   "peerDependencies": {
-    "@middy/core": "^5.4.0",
+    "@middy/core": "^6.1.5",
     "sst": "^2.43.0"
   },
   "dependencies": {
-    "@aws-lambda-powertools/logger": "^2.1.1",
-    "@aws-lambda-powertools/metrics": "^2.1.1",
-    "@aws-lambda-powertools/tracer": "^2.1.1",
+    "@aws-lambda-powertools/logger": "^2.15.0",
+    "@aws-lambda-powertools/metrics": "^2.15.0",
+    "@aws-lambda-powertools/tracer": "^2.15.0",
     "@darkobits/env": "^2.0.0",
-    "@types/aws-lambda": "^8.10.138",
+    "@types/aws-lambda": "^8.10.147",
     "@types/http-errors": "^2.0.4",
     "http-errors": "^2.0.0",
     "node-machine-id": "^1.1.12"
   },
   "devDependencies": {
-    "@darkobits/ts": "~0.20.9"
+    "@darkobits/ts": "~0.24.2"
   }
 }
