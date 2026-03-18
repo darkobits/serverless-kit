@@ -42,6 +42,10 @@
   ></a>
 </p>
 
+> [!WARNING]
+> Consult [`AGELESS.md`](./AGELESS.md) to determine if you are permitted to use
+> this software where you live.
+
 # Install
 
 ```
